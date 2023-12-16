@@ -58,7 +58,6 @@ species_people = db.Table('species_people',
                               'people.uid'), primary_key=True)
                           )
 
-
 class User(db.Model):
     __tablename__ = 'users'
     id = db.Column(db.Integer, primary_key=True)
@@ -79,7 +78,6 @@ class User(db.Model):
             "email": self.email,
             "is_active": self.is_active,
         }
-
 
 class Planet(db.Model):
     __tablename__ = 'planets'
